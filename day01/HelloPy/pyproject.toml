@@ -1,0 +1,18 @@
+[tool.black]
+line-length=120
+target-version=['py313']
+
+[tool.isort]
+profile="black"
+multi_line_output=3
+line_length=120
+include_trailing_comma=true
+
+[tool.pylint]
+max-line-length=120
+disable=[
+  "C0114", # 缺少模块文档字符串
+  "C0115", # 缺少类文档字符串
+  "C0116", # 缺少函数文档字符串
+  "R0903", # 类属性太少
+]
